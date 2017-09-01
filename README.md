@@ -27,3 +27,6 @@ gcc -Wall slowloris.c -o program -lpthread
 This program is not tested on port 443 (HTTPS) and will not probably work, because no encryption is set up.
 In future update I might use openssl to solve this issue.
 
+
+NOTE: You should look howmuch file descriptors are open before executing and the maximum allowed file descriptors which you can open. To view howmuch file descriptors you can open, look in /proc/sys/fs/file-max
+
