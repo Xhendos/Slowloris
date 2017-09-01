@@ -16,8 +16,14 @@ This slowloris program was developed and compiled using a GNU/Linux machine. It 
 
 ## [Usage](id:section-usages)
 
+Compile and link using the GNU Compiler Collection
+```
+gcc -Wall slowloris.c -o program -lpthread
+```
+
 ```
 ./program [IP to DOS] [Port number] [number of threads]
 ```
 This program is not tested on port 443 (HTTPS) and will not probably work, because no encryption is set up.
 In future update I might use openssl to solve this issue.
+
